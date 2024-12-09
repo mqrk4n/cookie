@@ -1,0 +1,122 @@
+/* Basic styling for the game */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f2e7;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.game-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 36px;
+    color: #8B4513;
+    margin-bottom: 20px;
+}
+
+.cookie-container {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#cookie {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+#cookie:hover {
+    transform: scale(1.1);
+}
+
+#cookie-count {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.shop-container {
+    background-color: #f7e2b7;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.upgrade-button {
+    background-color: #d7a94c;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+    margin: 10px;
+    width: 80%;
+}
+
+.upgrade-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.upgrade-button:hover:not(:disabled) {
+    background-color: #c78f3e;
+    transform: scale(1.05);
+}
+
+#upgrade-status, #auto-click-status {
+    font-size: 20px;
+    color: #8B4513;
+    margin-top: 10px;
+}
+
+/* Styling for the reset button */
+.reset-container {
+    margin-top: 30px;
+}
+
+.reset-button {
+    background-color: #ff4d4d; /* Red color to indicate danger */
+    color: white;
+    font-size: 20px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s ease-in-out;
+}
+
+.reset-button:hover {
+    background-color: #ff1a1a;
+    transform: scale(1.05);
+}
+
+/* Cookie particles effect */
+.cookie-particle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: url('cookie.png') no-repeat center center / cover;
+    animation: floatUp 2s ease-out forwards;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(0.5);
+        opacity: 0;
+    }
+}

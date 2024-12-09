@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Cookie Clicker Game</h1>
+
+        <!-- Cookie Image (Clickable) -->
+        <div class="cookie-container">
+            <img src="cookie.png" alt="Cookie" id="cookie" />
+            <p id="cookie-count">Cookies: 0</p>
+        </div>
+
+        <div class="shop-container">
+            <h2>Upgrades</h2>
+            <button id="upgrade1-button" class="upgrade-button" disabled>Cookie Enhancer (Cost: 10)</button>
+            <button id="upgrade2-button" class="upgrade-button" disabled>Auto Baker (Cost: 50)</button>
+            <button id="upgrade3-button" class="upgrade-button" disabled>Cookie Multipliers (Cost: 200)</button>
+            <button id="upgrade4-button" class="upgrade-button" disabled>Cookie Factory (Cost: 1000)</button>
+            <button id="upgrade5-button" class="upgrade-button" disabled>Cookie Farm (Cost: 5000)</button>
+
+            <p id="upgrade-status">Cookies per click: 1</p>
+            <p id="auto-click-status">Auto-cookies per second: 0</p>
+        </div>
+
+        <!-- Reset Button -->
+        <div class="reset-container" style="display: none;">
+            <button id="reset-button" class="reset-button">Reset Game (Requires 1,000,000 cookies)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
